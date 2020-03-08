@@ -11,8 +11,8 @@ function Card() {
   const [, newWord] = useState({});
   return (
     <div className="container">
-      <div class="content">
-        <h1 class="text-gray-700 text-base">
+      <div className="content">
+        <h1>
           La mujer, ese{" "}
           <span className="highlight">
             {adjetives[getRandom(0, adjetives.length)]}
