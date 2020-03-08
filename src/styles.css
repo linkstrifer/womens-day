@@ -49,3 +49,11 @@ body {
 .highlight {
   text-shadow: 3px 3px 0px #201148;
 }
+
+button {
+  background-color: #201148;
+  border: 0;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em;
+}

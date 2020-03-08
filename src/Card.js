@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import adjetives from "./libs/adjetives";
 import fAdjetives from "./libs/female-adjetives";
@@ -8,6 +8,7 @@ import nouns from "./libs/nouns";
 import getRandom from "./libs/random";
 
 function Card() {
+  const [, newWord] = useState({});
   return (
     <div className="container">
       <div class="content">
@@ -33,6 +34,9 @@ function Card() {
         <h2>
           Celebra tu día con [activación comercial] en [producto genérico].
         </h2>
+        <button onClick={() => newWord({})} type="button">
+          Generate!
+        </button>
       </div>
     </div>
   );
